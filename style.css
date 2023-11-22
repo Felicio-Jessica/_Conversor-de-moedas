@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Background.png");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 150vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 4px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body > img {
+  margin: 10px;
+}
+
+img {
+  max-height: 250px;
+}
+
+#cont {
+  background-color: rgba(255, 165, 0, 0.8);
+  box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 3px 10px 20px 3px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.76);
+  
+  width: 700px;
+  height: 360px;
+  border-radius: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  efeitos: transitionDown 0.6s ease-in-out, transitionOp 0.5s ease;
+}
+
+.content_img > img {
+  width: 350px;
+  margin-top: 20px;
+  border-radius: 15px 50px;
+}
+
+.content_form {
+  margin: 15px auto;
+}
+
+.content_form > input, button {
+  border: none;
+  border-radius: 40px;
+  
+}
+
+.content_form > input {
+  padding: 5px;
+  width: 140px;
+}
+
+.content_form > button {
+  padding: 5px;
+  width: 105px;
+}
+
+#valorFinal {
+  background-color: white;
+  width: 150px;
+  border-radius: 5px;
+}
+
+@keyframes transitionOp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes transitionDown {
+  0%,
+  20% {
+    transform: translateY(-50px);
+  }
+  
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.efeitos_botao {
+  efeitos: transitionDown 0.6s ease-in-out, transitionOp 0.5s ease;
+}
+
+
+
+
